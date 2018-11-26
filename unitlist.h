@@ -28,6 +28,6 @@ public:
 //	bool Remove(const string&);
 	size_t Read(istream&);
 	size_t Write(ostream&)const;
-	const Unit* Get(size_t)const;
-
+	Unit* Get(size_t)const;
+	size_t Size()const;
 };

@@ -96,8 +96,11 @@ size_t UnitList::Write(ostream& output)const{
 	}
 	return _size;
 }
-const Unit* UnitList::Get(size_t position)const{
+Unit* UnitList::Get(size_t position)const{
 	if (position >= _size)
 		return nullptr;
 	return _units[position];
+}
+size_t UnitList::Size()const{
+	return _size;
 }
